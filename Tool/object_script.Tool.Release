@@ -5,9 +5,11 @@ INPUT(
 ./release\qextserialbase.o
 ./release\com.o
 ./release\win_qextserialport.o
+./release\qmaintextedit.o
 ./release\moc_mainwindow.o
 ./release\moc_qextserialport.o
 ./release\moc_qextserialbase.o
 ./release\moc_com.o
 ./release\moc_win_qextserialport.o
+./release\moc_qmaintextedit.o
 );

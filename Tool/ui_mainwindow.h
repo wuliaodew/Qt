@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed Apr 24 14:02:06 2013
+** Created: Wed May 22 17:24:57 2013
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -29,6 +29,7 @@
 #include <QtGui/QTabWidget>
 #include <QtGui/QTextEdit>
 #include <QtGui/QWidget>
+#include <qmaintextedit.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -38,7 +39,7 @@ public:
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab;
-    QTextEdit *send_textedit;
+    QMainTextedit *send_textedit;
     QPushButton *seachcom;
     QComboBox *bandratebox;
     QPlainTextEdit *rec_textedit;
@@ -105,9 +106,9 @@ public:
         tabWidget->setMaximumSize(QSize(800, 600));
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
-        send_textedit = new QTextEdit(tab);
+        send_textedit = new QMainTextedit(tab);
         send_textedit->setObjectName(QString::fromUtf8("send_textedit"));
-        send_textedit->setGeometry(QRect(0, 30, 391, 461));
+        send_textedit->setGeometry(QRect(50, 30, 341, 451));
         send_textedit->setFocusPolicy(Qt::WheelFocus);
         send_textedit->setOverwriteMode(false);
         send_textedit->setTextInteractionFlags(Qt::TextEditorInteraction);
@@ -132,7 +133,7 @@ public:
         rec_textedit->setContextMenuPolicy(Qt::DefaultContextMenu);
         rec_textedit->setFrameShape(QFrame::StyledPanel);
         rec_textedit->setReadOnly(true);
-        rec_textedit->setTextInteractionFlags(Qt::NoTextInteraction);
+        rec_textedit->setTextInteractionFlags(Qt::TextSelectableByMouse);
         serialcom = new QComboBox(tab);
         serialcom->setObjectName(QString::fromUtf8("serialcom"));
         serialcom->setGeometry(QRect(480, 460, 71, 20));

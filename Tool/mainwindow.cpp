@@ -19,8 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->hex2button,SIGNAL(clicked()),this,SLOT(rev_data_dis()));
     connect(ui->str2button,SIGNAL(clicked()),this,SLOT(rev_data_dis()));
-
-    qtimer = new QTimer(this);
+     qtimer = new QTimer(this);
     connect(qtimer,SIGNAL(timeout()),this,SLOT(readserialdata()));
 
     autosendtimer = new QTimer(this);
@@ -173,7 +172,7 @@ void MainWindow::on_seachcom_clicked()
 
 void MainWindow::on_opencom_clicked()
 {
-    BaudRateType combandrate;
+    BaudRateType combandrate = BAUD9600;
 
     if(comstate==false)
     {

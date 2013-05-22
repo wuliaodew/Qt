@@ -54,13 +54,13 @@
      <attribute name="title">
       <string>串口</string>
      </attribute>
-     <widget class="QTextEdit" name="send_textedit">
+     <widget class="QMainTextedit" name="send_textedit">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>50</x>
         <y>30</y>
-        <width>391</width>
-        <height>461</height>
+        <width>341</width>
+        <height>451</height>
        </rect>
       </property>
       <property name="focusPolicy">
@@ -193,7 +193,7 @@ p, li { white-space: pre-wrap; }
        <bool>true</bool>
       </property>
       <property name="textInteractionFlags">
-       <set>Qt::NoTextInteraction</set>
+       <set>Qt::TextSelectableByMouse</set>
       </property>
      </widget>
      <widget class="QComboBox" name="serialcom">
@@ -862,6 +862,13 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QMainTextedit</class>
+   <extends>QTextEdit</extends>
+   <header location="global">qmaintextedit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
